@@ -1,0 +1,8 @@
+{
+    "local": {
+        "baseUrl": "https://localhost:5001"
+    },
+    "qa": {
+        "baseUrl": "https://test-api.k6.io"
+    }
+}

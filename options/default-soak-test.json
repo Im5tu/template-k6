@@ -1,0 +1,14 @@
+{
+    "stages": [
+        { "target": 400, "duration": "2m" },
+        { "target": 400, "duration": "3h56m" },
+        { "target": 0, "duration": "2m" }
+    ],
+    "thresholds": {
+        "errors": ["rate=0"],
+        "http_req_duration": ["p(95) < 750"],
+        "http_reqs": ["rate>=500"]
+    },
+    "rps": 2000,
+    "batchPerHost": 0
+}

@@ -1,0 +1,20 @@
+{
+    "stages": [
+        { "target": 100, "duration": "2m" },
+        { "target": 100, "duration": "5m" },
+        { "target": 200, "duration": "2m" },
+        { "target": 200, "duration": "5m" },
+        { "target": 300, "duration": "2m" },
+        { "target": 300, "duration": "5m" },
+        { "target": 400, "duration": "2m" },
+        { "target": 400, "duration": "5m" },
+        { "target": 0, "duration": "10m" }
+    ],
+    "thresholds": {
+        "errors": ["rate=0"],
+        "http_req_duration": ["p(95) < 750"],
+        "http_reqs": ["rate>=500"]
+    },
+    "rps": 2000,
+    "batchPerHost": 0
+}
